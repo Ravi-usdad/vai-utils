@@ -367,7 +367,10 @@
         --md-typeset-table-color: hsla(var(--md-hue), 75%, 95%, 0.12);
         --md-admonition-bg-color: hsla(var(--md-hue), 0%, 100%, 0.025);
         --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
-        --md-footer-bg-color--dark: hsla(var(--md-hue), 15%, 10%, 1)
+        --md-footer-bg-color--dark: hsla(var(--md-hue), 15%, 10%, 1);
+        --gray-color--dark:  #717171;
+        --dark-blue-bg-color: #0C2A41;
+        --text-white-color: #fff;        
     }
 
     [data-md-color-scheme=slate][data-md-color-primary=black],
