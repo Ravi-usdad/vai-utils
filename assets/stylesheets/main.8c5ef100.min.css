@@ -1762,24 +1762,31 @@ body[data-md-color-scheme="slate"] .md-nav__item.md-nav__item--nested {
 }
 
 .md-nav__item .md-nav__link--active {
-    color: var(--md-typeset-color);
+    color: var(--text-white-color);
     padding: 10px 0 10px 10px;
-    background: var(--md-primary-fg-color);
+    background: var(--dark-blue-bg-color);
     border-radius: 5px 0 0 5px;
     position: relative;
     width: calc(100% + 10px);
     margin-left: -10px;
 }
+.md-nav__item .md-nav__link--active:hover {
+    color: var(--text-white-color);
+}
 
 .md-nav__item .md-nav__link--active::after {
     content: '';
     position: absolute;
-    background-color: #0095FF;
+    background-color: #f5f5f5;
     top: 0;
     right: 0;
     width: 5px; 
     height: 100%;
     opacity: 0.5;
+}
+
+body[data-md-color-scheme="slate"]  .md-nav__item .md-nav__link--active::after {
+    background-color: #0095FF;
 }
 
 .md-nav__item .md-nav__link--index [href] {
@@ -6632,3 +6639,22 @@ html .md-typeset .footnote-ref {
         float: left
     }
 }
+
+
+/* css */
+body[data-md-color-scheme="slate"],
+body[data-md-color-scheme="slate"] .md-nav__item .md-nav__link {
+    color: var(--gray-color--dark);
+}
+
+body[data-md-color-scheme="slate"] .md-nav__item label.md-nav__link,
+body[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active,
+body[data-md-color-scheme="slate"] .md-typeset h2,
+body[data-md-color-scheme="slate"] .md-nav__title {
+    color: var(--md-typeset-color);
+}
+
+body[data-md-color-scheme="slate"] .md-nav__item .md-nav__link:hover {
+    color: var(--text-white-color);
+}
+/* css */
