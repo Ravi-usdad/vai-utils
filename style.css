@@ -68,8 +68,9 @@ h4 {
 
 :root {
     --md-primary-fg-color: #0C2A41;
-    --dark-blue-bg-color: #526cfe;
+    --dark-blue-bg-color: #ebf7ff;
     --text-white-color: #fff;
+    --active-text-color: #0692ff;
 }
 
 input {
